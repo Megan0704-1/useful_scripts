@@ -56,7 +56,6 @@
             transition: all 0.3s;
         `;
 
-        // 添加点击效果
         btn.addEventListener('touchstart', () => {
             btn.style.transform = 'scale(0.95)';
             btn.style.opacity = '0.9';
@@ -171,6 +170,7 @@
     if (document.readyState === 'complete') {
         init();
     } else {
+        showAlert("document not ready")
         window.addEventListener('load', init);
     }
 })();
