@@ -17,7 +17,7 @@
     // debug message
     function showAlert(message, duration = 3000) {
         const alertDiv = document.createElement('div');
-        alertDiv.style.cssText = `
+        alertDiv.style = `
             position: fixed;
             top: 20px;
             left: 50%;
@@ -41,7 +41,7 @@
     function createMainButton() {
         const btn = document.createElement('button');
         btn.textContent = 'GO Parse';
-        btn.style.cssText = `
+        btn.style = `
             position: fixed;
             bottom: 30px;
             left: 20px;
